@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="toggle">
+		<span></span>
+	</div>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	 <script type="text/javascript">
+		$(document).ready(function() {
+			$('.toggle').click(function() {
+				$('.toggle').toggleClass('active');
+				$('body').toggleClass('active')
+			})
+		})
+	</script>
+</body>
+</html>
