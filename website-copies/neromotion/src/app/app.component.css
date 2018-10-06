@@ -1,0 +1,33 @@
+.bg {
+  width: 100%;
+  height: 100%;
+  background-color: #E94345;
+}
+
+.container {
+  position: fixed;
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  margin-top: 120vh;
+  top: 0;
+  left: 0;
+  margin-bottom: 20vh;
+  background: transparent;
+  position: absolute;
+}
+
+.text {
+  font-size: 50px;
+  color: black;
+}
+
+.changeColor {
+  background: white;
+}
