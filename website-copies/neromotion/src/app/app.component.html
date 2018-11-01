@@ -1,11 +1,9 @@
 <div class="ab">
+
   <div class="container"  [style.width]="newWidth + '%'" #container>
-  <div class="bg" #bg></div>
-</div>
-<div class="main">
-  <div class="text">Something</div>
-</div>
-<div class="container">
+    <div class="bg" #bg></div>
+  </div>
+<div class="main" #main>
   <div [ngClass]="{'slide-top-1-5': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-2-5': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-2-3': isClicked }" class="column"></div>
@@ -27,7 +25,7 @@
   <div [ngClass]="{'slide-top-0-7': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-0-5': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-1': isClicked }" class="column"></div>
-  <div [ngClass]="{'slide-top-0-8': isClicked }" class="column"></div>
+  <div [ngClass]="{'slide-top-0-11': isTrue }" class="column"></div>
   <div [ngClass]="{'slide-top-0-9': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-0-5': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-0-8': isClicked }" class="column"></div>
@@ -54,6 +52,9 @@
   <div [ngClass]="{'slide-top-2': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-2-3': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-2-5': isClicked }" class="column"></div>
-  <button *ngIf="!isClicked" (click)="disappear()">Click</button>
+  <button class="scroll-btn" (click)="triggerScrollToOffsetOnly(800)" >Click to see magic</button>
 </div>
+</div>
+
+<div *ngIf="isOpen" class="me" [ngClass]="{'border' : isTrue}">
 </div>

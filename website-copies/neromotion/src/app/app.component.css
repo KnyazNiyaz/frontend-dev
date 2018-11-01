@@ -15,12 +15,13 @@
 .main {
   width: 100%;
   height: 100vh;
-  margin-top: 120vh;
+  margin-top: 55vh;
   top: 0;
   left: 0;
-  margin-bottom: 20vh;
   background: transparent;
   position: absolute;
+  z-index: -1;
+  display: flex;
 }
 
 .text {
@@ -32,17 +33,14 @@
   background: white;
 }
 
-
-
-/*//////////////*/
-
-
-
-.container {
-  display: flex;
+.me {
+  height: 100vh;
   width: 100%;
-  height: 100%;
+  margin-top: 155vh;
+  background: white;
+  /*background: url("./../assets/bg.jpg");*/
 }
+
 
 .column {
   background: black;
@@ -51,8 +49,19 @@
   transition: 1s;
 }
 
+.slide-top-0-11 {
+  height: 500px;
+  width: 80px;
+  transition: 2s;
+  transform: translateY(800px);
+  /*background: url("../assets/2_03.jpg");*/
+  /*position: absolute;*/
+  /*top: 800px;*/
+  /*left: 50%;*/
+}
 
-button {
+
+.button {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -117,7 +126,31 @@ button {
 }
 
 
+.scroll-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
+@keyframes make {
+  from {
+    border: 0;
+    box-sizing: content-box;
+  }
+  to {
+    border: 10px solid;
+    box-sizing: border-box;
+  }
+}
+
+
+.border {
+  /*transition: 3s;*/
+  animation-name: make;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
 
 
 
