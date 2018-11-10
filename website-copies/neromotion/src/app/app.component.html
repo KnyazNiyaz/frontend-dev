@@ -1,5 +1,4 @@
 <div class="ab">
-
   <div class="container"  [style.width]="newWidth + '%'" #container>
     <div class="bg" #bg></div>
   </div>
@@ -25,8 +24,8 @@
   <div [ngClass]="{'slide-top-0-7': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-0-5': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-1': isClicked }" class="column"></div>
-  <div [ngClass]="{'slide-top-0-11': isTrue }" class="column"></div>
-  <div [ngClass]="{'slide-top-0-9': isClicked }" class="column"></div>
+  <div [ngClass]="{'slide-top-1': isTrue }" class="column"></div>
+  <div [ngClass]="{'slide-top-0-11': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-0-5': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-0-8': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-1': isClicked }" class="column"></div>
@@ -52,9 +51,25 @@
   <div [ngClass]="{'slide-top-2': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-2-3': isClicked }" class="column"></div>
   <div [ngClass]="{'slide-top-2-5': isClicked }" class="column"></div>
-  <button class="scroll-btn" (click)="triggerScrollToOffsetOnly(800)" >Click to see magic</button>
-</div>
+  <button class="scroll-btn" *ngIf="!isTrue" (click)="trig()" >Click to see magic</button>
+  <!--<div *ngIf="isNiyaz" class="scroll-btn">Нияз красава :)</div>-->
 </div>
 
-<div *ngIf="isOpen" class="me" [ngClass]="{'border' : isTrue}">
+  <div class="last" *ngIf="isClicked">
+    <div class="page-left"></div>
+    <div class="page-right">
+      <div class="height r-l-1"></div>
+      <div class="height r-eye">
+        <div class="r-eye-top"></div>
+        <img src="../assets/eye.png" alt="">
+        <div class="r-eye-bottom"></div>
+      </div>
+      <div class="height r-r-1"></div>
+    </div>
+    <div></div>
+  </div>
 </div>
+
+<div *ngIf="isOpen" class="me">
+</div>
+

@@ -2,5 +2,5 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: black;
+  /*-webkit-transform:translate3d(0,0,0);*/
 }
