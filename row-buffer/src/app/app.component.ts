@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'row-buffer';
+  @ViewChild('table') table;
+
+  @HostListener('scroll', ['$event'])
+  public scrolled($event: Event) {
+    console.log($event);
+  }
+
+  arr = [['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12],
+    ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12],
+    ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12], ['asd', 12]];
+
+  onScroll(e) {
+    console.log(e);
+    // console.log(e.getBoundingClientRect());
+  }
+
+  check() {
+    console.log(this.table.nativeElement.getBoundingClientRect());
+  }
 }
