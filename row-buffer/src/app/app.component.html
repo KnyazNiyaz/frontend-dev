@@ -1,0 +1,23 @@
+<div>
+  <table #table class="fixed_header" >
+    <thead>
+    <tr >
+      <th>Col 1</th>
+      <th>Col 2</th>
+      <th>Col 3</th>
+      <th>Col 4</th>
+      <th>Col 5</th>
+    </tr>
+    </thead>
+    <tbody #body appTableDirective [nodes]="body">
+    <tr  *ngFor="let a of arr">
+      <td>row 1-0</td>
+      <td>row 1-1</td>
+      <td>row 1-2</td>
+      <td>row 1-3</td>
+      <td>row 1-4</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<button (click)="check()">Check</button>

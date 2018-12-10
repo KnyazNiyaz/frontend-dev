@@ -1,0 +1,33 @@
+.triangle {
+    animation: foo 1s;
+    /*animation-delay: 3s;*/
+    transform-origin: center center;
+}
+
+@-webkit-keyframes foo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(125deg);
+    }
+}
+
+.lines {
+    stroke-dasharray: 7331;
+    stroke-dashoffset: 0;
+    stroke: red;
+    stroke-linejoin: round;
+    animation: animate 3s;
+}
+
+@keyframes animate {
+    0% {
+        /*opacity: 0;*/
+        stroke-dashoffset: 7331;
+    }
+    100% {
+        /*opacity: 1;*/
+        stroke-dashoffset: 0;
+    }
+}
