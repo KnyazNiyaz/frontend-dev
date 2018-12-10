@@ -59,13 +59,13 @@ export class AppComponent implements OnInit {
     this.isOpen = true;
     this.isClicked = true;
     this.isTrue = true;
-    const config: ScrollToConfigOptions = {
-      duration: 1000,
-      // easing: 'easeOutElastic',
-      offset
-    };
+    // const config: ScrollToConfigOptions = {
+    //   duration: 1000,
+    //   // easing: 'easeOutElastic',
+    //   offset
+    // };
 
-    this._scrollToService.scrollTo(config);
+    // this._scrollToService.scrollTo(config);
   }
 
 

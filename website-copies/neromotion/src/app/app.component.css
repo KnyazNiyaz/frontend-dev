@@ -13,12 +13,16 @@
 }
 
 .main {
+  background-size: 90% 90% !important;
+  background-repeat: no-repeat !important;
+  background-position-x: 50% !important;
+  background-position-y: 50% !important;
   width: 100%;
   height: 100vh;
   margin-top: 55vh;
   top: 0;
   left: 0;
-  background: transparent;
+  /*background: url("./../assets/rodinka-r-ear.JPG");*/
   position: absolute;
   z-index: -1;
   display: flex;
@@ -129,6 +133,7 @@
 }
 
 .scroll-btn {
+  z-index: 10000;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -198,10 +203,10 @@
   flex-direction: column;
 }
 
-.r-eye img {
-  width: 100%;
-  height: 50%;
-}
+/*.r-eye img {*/
+  /*width: 100%;*/
+  /*height: 50%;*/
+/*}*/
 
 .r-eye-top {
   /*background: black;*/
@@ -215,4 +220,63 @@
   /*background: black;*/
   /*width: 100px;*/
   /*height: 100px;*/
+}
+
+.parts {
+  z-index: -1;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+  background-size: 995px 664px !important;
+}
+
+.r-eye {
+  background: url("./../assets/r-eye.JPG");
+  left: 53%;
+  width: 9%;
+  top: 25%;
+  height: 38%;
+  background-position-x: 59%;
+  background-position-y: 35%;
+}
+
+.rodinka {
+  background: url("./../assets/rodinka-r-ear.JPG");
+  left: 48%;
+  width: 13%;
+  top: 39%;
+  height: 57%;
+  background-position-x: 56%;
+  background-position-y: 96%;
+}
+
+.r-mouse {
+  background: url("./../assets/mouse.JPG");
+  left: 50%;
+  width: 7%;
+  top: 54%;
+  height: 15%;
+  background-position-x: 55%;
+  background-position-y: 65%;
+}
+
+.r-ear {
+  background: url("./../assets/rodinka-r-ear.JPG");
+  left: 62.5%;
+  width: 2%;
+  top: 6%;
+  height: 57%;
+  background-position-x: 65%;
+  background-position-y: 15%;
+}
+
+.m-mouse {
+  background: url("./../assets/m-mouse.JPG");
+  left: 44%;
+  width: 8%;
+  top: 35%;
+  height: 42%;
+  background-position-x: 46%;
+  background-position-y: 67%;
 }
